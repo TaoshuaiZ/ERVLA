@@ -1,0 +1,452 @@
+[
+  {
+    "episode_id": 0,
+    "task": "insert_flower",
+    "instruction": " Identify and carefully handle the flower linked to gestures of love and arrange it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 1,
+    "task": "insert_flower",
+    "instruction": " Choose the flower that is universally recognized for its connection to Valentine\u2019s Day and place it into the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 2,
+    "task": "insert_flower",
+    "instruction": " Choose the blossom known for its romantic connotations and gently arrange it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 3,
+    "task": "insert_flower",
+    "instruction": " Pick the bloom that signifies deep admiration and ensure it\u2019s arranged in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 4,
+    "task": "insert_flower",
+    "instruction": " Please select the bloom that represents passion and carefully place it into the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 5,
+    "task": "insert_flower",
+    "instruction": " Kindly choose the flower known for its representation of longevity and fidelity, and place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 6,
+    "task": "insert_flower",
+    "instruction": " Kindly pick the flower symbolizing passion and romance, and carefully place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 7,
+    "task": "insert_flower",
+    "instruction": " Identify the flower often associated with passion and gently arrange it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 8,
+    "task": "insert_flower",
+    "instruction": " Find the exquisite flower associated with admiration and place it gracefully into the vase.",
+    "success": true,
+    "consumed_step": 165,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 9,
+    "task": "insert_flower",
+    "instruction": " Please help me find a flower that has thorns but is still considered the epitome of beauty, and place it in the vase.",
+    "success": true,
+    "consumed_step": 153,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 10,
+    "task": "insert_flower",
+    "instruction": " Locate the flower associated with deep passion, usually found in spring, and arrange it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 11,
+    "task": "insert_flower",
+    "instruction": " Choose a flower that is associated with happiness and cheerfulness, and carefully place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 12,
+    "task": "insert_flower",
+    "instruction": " Pick out a flower that is a classic symbol of love at first sight, and set it into the vase.",
+    "success": true,
+    "consumed_step": 193,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 13,
+    "task": "insert_flower",
+    "instruction": " Choose the flower often associated with romance and gently position it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 14,
+    "task": "insert_flower",
+    "instruction": " Kindly pick the bloom symbolizing passion and admiration and place it gently in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 15,
+    "task": "insert_flower",
+    "instruction": " I need assistance in choosing a flower that is traditionally linked with heartfelt emotions and place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 16,
+    "task": "insert_flower",
+    "instruction": " Identify the flower often linked with heartfelt affection and carefully transplant it into the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 17,
+    "task": "insert_flower",
+    "instruction": " Please help me select a flower that represents enduring love and place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 18,
+    "task": "insert_flower",
+    "instruction": " Locate the flower that conveys heartfelt emotions and deposit it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 19,
+    "task": "insert_flower",
+    "instruction": " Kindly grasp the flower that is often associated with romance and gently place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 20,
+    "task": "insert_flower",
+    "instruction": " Please pick the flower that stands for romantic love and gently position it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 21,
+    "task": "insert_flower",
+    "instruction": " Please help me select the flower that symbolizes longevity and fidelity, and place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 22,
+    "task": "insert_flower",
+    "instruction": " Choose a flower associated with joy and optimism, and carefully place it into the vase.",
+    "success": true,
+    "consumed_step": 164,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 23,
+    "task": "insert_flower",
+    "instruction": " Please help me select the flower that symbolizes longevity and place it in the vase.",
+    "success": true,
+    "consumed_step": 194,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 24,
+    "task": "insert_flower",
+    "instruction": " Kindly choose a bloom symbolic of passion and affection, ensuring it is transferred carefully into the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 25,
+    "task": "insert_flower",
+    "instruction": " Identify the flower that heralds love at first sight and gently drop it into the vase.`",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 26,
+    "task": "insert_flower",
+    "instruction": " Kindly grasp the flower symbolizing admiration, ensuring to place it elegantly in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 27,
+    "task": "insert_flower",
+    "instruction": " Choose a flower that is associated with joy and longevity, and carefully place it into the vase.",
+    "success": true,
+    "consumed_step": 164,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 28,
+    "task": "insert_flower",
+    "instruction": " Opt for the flower that signifies support and encouragement in difficult times and place it in the vase.",
+    "success": true,
+    "consumed_step": 159,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 29,
+    "task": "insert_flower",
+    "instruction": " Please help me choose a flower known for its colorful and cup-shaped blooms and place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 30,
+    "task": "insert_flower",
+    "instruction": " Select the flower known for its representation of admiration and set it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 31,
+    "task": "insert_flower",
+    "instruction": " Carefully retrieve the flower that is often linked to passion and secure it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 32,
+    "task": "insert_flower",
+    "instruction": " Please handle the flower that reflects truth and is often seen in bright yellows and place it carefully in the vase.",
+    "success": true,
+    "consumed_step": 182,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 33,
+    "task": "insert_flower",
+    "instruction": " Kindly choose the bloom known for representing cheerfulness and place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 34,
+    "task": "insert_flower",
+    "instruction": " Choose the flower which signifies passion, and carefully place it in the vase for display.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 35,
+    "task": "insert_flower",
+    "instruction": " Choose a flower associated with longevity and rejuvenation, and carefully place it in the vase.",
+    "success": true,
+    "consumed_step": 184,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 36,
+    "task": "insert_flower",
+    "instruction": " Could you find the blossom that epitomizes cheerful thoughts and royal bearings, and put it into the vase?",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 37,
+    "task": "insert_flower",
+    "instruction": " Find the flower that embodies truth and place it in the vase for display.`  ",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 38,
+    "task": "insert_flower",
+    "instruction": " Choose the flower known for its deep, enduring passion and arrange it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 39,
+    "task": "insert_flower",
+    "instruction": " Choose the flower that embodies romance and insert it into the vase with care.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 40,
+    "task": "insert_flower",
+    "instruction": " Choose the blossom that stands for passion and meticulously position it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 41,
+    "task": "insert_flower",
+    "instruction": " Choose the flower that stands for romance and gently arrange it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 42,
+    "task": "insert_flower",
+    "instruction": " Choose the bloom that represents the noble quality of enduring life's difficulties with grace and place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 43,
+    "task": "insert_flower",
+    "instruction": " Find a flower that is known for its vitality and long life, and set it in the vase with care.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 44,
+    "task": "insert_flower",
+    "instruction": " Please identify the flower that symbolizes deep affection and carefully place it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 45,
+    "task": "insert_flower",
+    "instruction": " Locate the flower that epitomizes heartfelt emotions and deposit it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 46,
+    "task": "insert_flower",
+    "instruction": " Pick the flower commonly associated with perfection and position it gracefully in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 47,
+    "task": "insert_flower",
+    "instruction": " Pick the floral emblem of adoration and arrange it neatly in the vase.",
+    "success": true,
+    "consumed_step": 199,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 48,
+    "task": "insert_flower",
+    "instruction": " Select a blossom that represents deep devotion and softly lay it in the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 49,
+    "task": "insert_flower",
+    "instruction": " Find the flower known for its festive meanings, and set it gracefully into the vase.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  }
+]

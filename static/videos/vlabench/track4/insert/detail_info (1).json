@@ -1,0 +1,452 @@
+[
+  {
+    "episode_id": 0,
+    "task": "insert_flower",
+    "instruction": " We're having a spring-themed dinner party tonight. Choose a few vibrant roses and place them in the vase on the dining table as a centerpiece.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 1,
+    "task": "insert_flower",
+    "instruction": " Tonight's dinner party needs a centerpiece. Find a stunning rose and set it in the vase at the center of the dining table to enhance the ambiance.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 2,
+    "task": "insert_flower",
+    "instruction": " Today is my mother's birthday. Please pick the freshest rose from the garden, and gently place it in the vase on the dining table as a centerpiece.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 3,
+    "task": "insert_flower",
+    "instruction": " My sister's birthday is this weekend, and her favorite flowers are roses. Please choose the freshest and most vibrant red roses and arrange them in the vase as a centerpiece for the celebration.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 4,
+    "task": "insert_flower",
+    "instruction": " For tonight's dinner party, arrange a beautiful centerpiece by placing several roses in the centerpiece vase on the living room table.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 5,
+    "task": "insert_flower",
+    "instruction": " It\u2019s my mother\u2019s birthday today. She loves chrysanthemums. Please take the freshest chrysanthemums you can find and place them in her favorite vase as a surprise.",
+    "success": true,
+    "consumed_step": 179,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 6,
+    "task": "insert_flower",
+    "instruction": " It's a sunny Sunday morning and perfect for some fresh flowers in the house. Please take some roses and arrange them in the vase on the kitchen counter to brighten up the space.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 7,
+    "task": "insert_flower",
+    "instruction": " It\u2019s a rainy day and I could use something to lift my spirits. Please take some pink roses and place them in the vase on my study desk to add a bit of cheer.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 8,
+    "task": "insert_flower",
+    "instruction": " My mother's birthday is coming up, and her favorite flowers are roses. Please pick a fresh bouquet of roses and place them gently in the vase on the dining table to surprise her.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 9,
+    "task": "insert_flower",
+    "instruction": " I am trying to sell my home and today we have an open house. Place a charming rose in the vase in the entrance hall to create a welcoming atmosphere.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 10,
+    "task": "insert_flower",
+    "instruction": " As we're hosting a spring-themed garden party this afternoon, pick the freshest tulips from the garden and arrange them neatly in the vase on the dining table.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 11,
+    "task": "insert_flower",
+    "instruction": " Given that chrysanthemums symbolize longevity and joy, please place a bouquet of these flowers in the vase for our traditional family gathering this evening.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 12,
+    "task": "insert_flower",
+    "instruction": " It's my best friend\u2019s birthday today, please take a vibrant rose and place it in the vase in the living room to surprise her when she comes over.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 13,
+    "task": "insert_flower",
+    "instruction": " It's the first day of spring, and I'd love to brighten up our home. Please gather some lovely roses and arrange them in the vase on the coffee table in the living room.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 14,
+    "task": "insert_flower",
+    "instruction": " It's the first day of spring! Help me celebrate by placing a vibrant rose into the vase on the kitchen table to bring some of that spring beauty indoors.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 15,
+    "task": "insert_flower",
+    "instruction": " It's the first date anniversary with my partner. Please find a perfect rose that shows my deep affection and place it carefully in the vase on our dinner table to remind us of our first date.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 16,
+    "task": "insert_flower",
+    "instruction": " We're having a few guests over for tea this afternoon. Please arrange a bouquet of white roses in the vase on the coffee table to create a welcoming and elegant atmosphere.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 17,
+    "task": "insert_flower",
+    "instruction": " It's my best friend's birthday today. Can you place a vibrant rose in the vase to brighten up the living room before she arrives?",
+    "success": true,
+    "consumed_step": 199,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 18,
+    "task": "insert_flower",
+    "instruction": " I'm planning to propose tonight. Please arrange a beautiful rose in the vase next to the dinner setting as it symbolizes passion and love, perfect for the occasion.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 19,
+    "task": "insert_flower",
+    "instruction": " It\u2019s an important day as I\u2019m having guests over for tea. Please place a delightful rose in the small vase on the coffee table to make the space more welcoming.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 20,
+    "task": "insert_flower",
+    "instruction": " We are having an important business dinner at home tonight. Please place an elegant arrangement of roses in the foyer vase to make a good impression as our guests arrive.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 21,
+    "task": "insert_flower",
+    "instruction": " This evening I am hosting a traditional tea ceremony. Could you arrange some yellow chrysanthemums in the vase seen in the living room to foster a calming and peaceful atmosphere?",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 22,
+    "task": "insert_flower",
+    "instruction": " It\u2019s my best friend\u2019s housewarming party tonight. Please select fresh chrysanthemums, which represent longevity and good fortune, and arrange them stylishly in the vase for the celebration.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 23,
+    "task": "insert_flower",
+    "instruction": " As autumn begins, help me decorate the living room with seasonal flowers. Pick a fresh chrysanthemum, symbolizing the beauty of autumn, and arrange it in the vase on the coffee table.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 24,
+    "task": "insert_flower",
+    "instruction": " I'm hosting a spring garden tea party this afternoon. Could you please pick a fresh rose from the garden and place it in the vase on the center table to add a touch of natural beauty?",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 25,
+    "task": "insert_flower",
+    "instruction": " Today is an important day as I'm celebrating my promotion. Please select roses that evoke celebration, arrange them artistically, and place them in the vase in my home office.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 26,
+    "task": "insert_flower",
+    "instruction": " I'm hosting a small get-together at my home this evening. Could you please prepare a centerpiece with red roses and place it in the vase on the living room coffee table?",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 27,
+    "task": "insert_flower",
+    "instruction": " My sister has her first art exhibition today. Please select a classy chrysanthemum and place it in the vase at the gallery entrance to add a touch of elegance and calm.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 28,
+    "task": "insert_flower",
+    "instruction": " To brighten up our home office, select a vibrant chrysanthumum and place it in the vase next to the window. Its bold color will inspire creativity and energy during our work.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 29,
+    "task": "insert_flower",
+    "instruction": " I am hosting a spring-themed brunch tomorrow. Could you pick some fresh red tulips and arrange them in the vase on the buffet table as a centerpiece?",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 30,
+    "task": "insert_flower",
+    "instruction": " My mother is visiting today and she loves fresh flowers. Please pick a beautiful rose from the garden and place it gently into the vase on the dining table.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 31,
+    "task": "insert_flower",
+    "instruction": " My mother is coming to visit today, and her favorite flowers are roses. Please pick some fresh roses from the garden and arrange them in the vase in the living room.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 32,
+    "task": "insert_flower",
+    "instruction": " It\u2019s the annual spring open house this afternoon. Arrange a welcoming bouquet of chrysanthemums in the vase seen in the front lobby to greet our guests.",
+    "success": true,
+    "consumed_step": 188,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 33,
+    "task": "insert_flower",
+    "instruction": " It\u2019s the Chinese New Year, and chrysanthemums symbolize longevity. Please place a few in the vase on our altar to bring good fortune for the coming year.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 34,
+    "task": "insert_flower",
+    "instruction": " It\u2019s my mother's birthday today. Pick a vibrant rose from the garden and arrange it beautifully in the vase to surprise her.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 35,
+    "task": "insert_flower",
+    "instruction": " Today is my mother's birthday, and chrysanthemums are her favorite flower. Please pick a fresh chrysanthemum and place it in the vase to brighten her day.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 36,
+    "task": "insert_flower",
+    "instruction": " I\u2019m hosting a spring-themed afternoon tea today. Please pick a fresh tulip that complements the cheerful decor and place it in the vase on the coffee table.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 37,
+    "task": "insert_flower",
+    "instruction": " Today is my friend's housewarming party. Chrysanthemums represent longevity and joy. Please arrange a few in the vase as a thoughtful gift for their new home.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 38,
+    "task": "insert_flower",
+    "instruction": " It's my best friend\u2019s birthday today; she loves tulips. Please choose a beautiful tulip and set it in the vase on the living room coffee table.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 39,
+    "task": "insert_flower",
+    "instruction": " Today is my partner's birthday. Please make sure to place a single, beautiful rose in the vase on the bedside table to start their day off right.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 40,
+    "task": "insert_flower",
+    "instruction": " Our garden party is this afternoon, and I would like the tables to look vibrant. Please gather some fresh roses from the garden and arrange them beautifully in the vases on each table.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 41,
+    "task": "insert_flower",
+    "instruction": " It's a sunny spring morning, perfect for refreshing the house. Could you place a freshly picked rose into the vase on the kitchen counter to brighten up the space?",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 42,
+    "task": "insert_flower",
+    "instruction": " Today is Teachers' Day, and I want to appreciate my son's teacher. Please select some elegant chrysanthemums, symbol of truth and devoted love, and arrange them in the vase.",
+    "success": true,
+    "consumed_step": 173,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 43,
+    "task": "insert_flower",
+    "instruction": " With autumn fast approaching, usher in the season by arranging a vibrant display of chrysanthemums in the living room vase to embrace the fall spirit.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 44,
+    "task": "insert_flower",
+    "instruction": " It's Mother's Day and I want to make breakfast special for my mom. Please put a lovely pink rose in the vase on our breakfast tray.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 45,
+    "task": "insert_flower",
+    "instruction": " I'm trying to sell the house and the real estate agent suggested having fresh flowers for the open house. Please take this rose and put it in the vase on the fireplace mantel.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 46,
+    "task": "insert_flower",
+    "instruction": " Today marks the annual fall festival; let\u2019s brighten up our home with the festival\u2019s symbolic flower. Please pick a bunch of fresh chrysanthemums and place them carefully in the vase on our main table.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 47,
+    "task": "insert_flower",
+    "instruction": " My best friend has graduated and I am organizing a little celebration. Please place some roses in the vase on the dining table to honor her achievement.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 48,
+    "task": "insert_flower",
+    "instruction": " My best friend just got promoted, and I want to congratulate her with her preferred blooms. Retrieve a bright rose from our collection and set it carefully in the vase on her desk.",
+    "success": true,
+    "consumed_step": 153,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 49,
+    "task": "insert_flower",
+    "instruction": " It's my mother's birthday, and her favorite flower is the chrysanthemum. Please find the most beautiful bloom and put it in the vase on the dining table to surprise her.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  }
+]

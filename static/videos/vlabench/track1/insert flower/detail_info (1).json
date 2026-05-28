@@ -1,0 +1,452 @@
+[
+  {
+    "episode_id": 0,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 1,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 2,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 3,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": true,
+    "consumed_step": 159,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 4,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 5,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 6,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 7,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 8,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 9,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": true,
+    "consumed_step": 164,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 10,
+    "task": "insert_flower",
+    "instruction": "Insert the tulip into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 11,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 12,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 13,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 14,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 15,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 16,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 17,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 18,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 19,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 20,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 21,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 22,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": true,
+    "consumed_step": 163,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 23,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 24,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 25,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": true,
+    "consumed_step": 159,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 26,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 27,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": true,
+    "consumed_step": 169,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 28,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 29,
+    "task": "insert_flower",
+    "instruction": "Insert the tulip into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 30,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 31,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 32,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 33,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 34,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 35,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 36,
+    "task": "insert_flower",
+    "instruction": "Insert the tulip into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 37,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 38,
+    "task": "insert_flower",
+    "instruction": "Insert the tulip into the vase_seen.",
+    "success": true,
+    "consumed_step": 174,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 39,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": true,
+    "consumed_step": 171,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 40,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 41,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 42,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": true,
+    "consumed_step": 184,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 43,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 44,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 45,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 46,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 47,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 48,
+    "task": "insert_flower",
+    "instruction": "Insert the rose into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 49,
+    "task": "insert_flower",
+    "instruction": "Insert the chrysanthemum into the vase_seen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  }
+]

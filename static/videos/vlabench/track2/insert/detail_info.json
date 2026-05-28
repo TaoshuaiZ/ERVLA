@@ -1,0 +1,92 @@
+[
+  {
+    "episode_id": 0,
+    "task": "insert_flower",
+    "instruction": "Insert the daisy_flower into the vase_unseen.",
+    "success": true,
+    "consumed_step": 174,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 1,
+    "task": "insert_flower",
+    "instruction": "Insert the daisy_flower into the vase_unseen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 2,
+    "task": "insert_flower",
+    "instruction": "Insert the daisy_flower into the vase_unseen.",
+    "success": true,
+    "consumed_step": 190,
+    "intention_score": 1.0,
+    "progress_score": 1.0
+  },
+  {
+    "episode_id": 3,
+    "task": "insert_flower",
+    "instruction": "Insert the daisy_flower into the vase_unseen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 4,
+    "task": "insert_flower",
+    "instruction": "Insert the daisy_flower into the vase_unseen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 5,
+    "task": "insert_flower",
+    "instruction": "Insert the daisy_flower into the vase_unseen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 6,
+    "task": "insert_flower",
+    "instruction": "Insert the daisy_flower into the vase_unseen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 7,
+    "task": "insert_flower",
+    "instruction": "Insert the daisy_flower into the vase_unseen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 8,
+    "task": "insert_flower",
+    "instruction": "Insert the daisy_flower into the vase_unseen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  },
+  {
+    "episode_id": 9,
+    "task": "insert_flower",
+    "instruction": "Insert the peony into the vase_unseen.",
+    "success": false,
+    "consumed_step": 200,
+    "intention_score": 1.0,
+    "progress_score": 0.5
+  }
+]

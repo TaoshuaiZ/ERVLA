@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title> ERVLA </title>
+
+  <link rel="icon" type="image/webp" href="./static/images/Logo.webp">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/video-player.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+
+  <style>
+    :root {
+      --page-bg-top: #fff8e8;
+      --page-bg-bottom: #f7edd3;
+      --surface: rgba(255, 253, 247, 0.92);
+      --surface-soft: rgba(255, 248, 232, 0.9);
+      --surface-border: rgba(173, 125, 48, 0.18);
+      --text-primary: #3f3525;
+      --text-secondary: #74664f;
+      --heading-primary: #4b3518;
+      --showcase-accent: #b98222;
+      --showcase-accent-soft: #e9c878;
+      --showcase-accent-alt: #8c6430;
+      --showcase-shadow: 0 18px 40px rgba(92, 67, 26, 0.12);
+      --showcase-shadow-hover: 0 24px 54px rgba(92, 67, 26, 0.18);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #ffffff;
+      color: var(--text-primary);
+    }
+    body,
+    .content,
+    .content p,
+    .content li {
+      color: var(--text-primary);
+    }
+    .section,
+    .hero,
+    .container {
+      background: transparent;
+    }
+    .title,
+    .subtitle,
+    .mathvista_other,
+    .title.is-3,
+    .title.is-4 {
+      color: var(--heading-primary);
+    }
+    .section .title.is-3,
+    .section .title.is-4,
+    .hero.is-light .title.mathvista_other,
+    .hero.is-light .mathvista_other {
+      font-family: 'Montserrat', 'Google Sans', 'Noto Sans', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      color: #6b491b;
+      text-shadow: 0 2px 12px rgba(150, 105, 30, 0.14);
+    }
+    .section .title.is-3:not(.publication-subtitle),
+    .section .title.is-4,
+    .hero.is-light .title.mathvista_other,
+    .hero.is-light .mathvista_other {
+      background: linear-gradient(135deg, #8a5b16 0%, #c4922f 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .content strong,
+    .best {
+      color: #9a6719;
+    }
+    em,
+    i,
+    .content em,
+    .content i,
+    [style*="font-style:italic"],
+    [style*="font-style: italic"] {
+      font-style: normal !important;
+    }
+    a:not(.button):not(.navbar-link):not(.navbar-item) {
+      color: #a56e1d;
+      transition: color 0.2s ease;
+    }
+    a:not(.button):not(.navbar-link):not(.navbar-item):hover {
+      color: #6f4713;
+    }
+    /* Uniform video aspect-ratio wrapper (572:376 ≈ 3:2) */
+    .video-uniform {
+      position: relative;
+      width: 100%;
+      padding-bottom: 65.73%; /* 376/572 × 100% */
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+      transform-origin: center center;
+    }
+    .video-uniform video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+    .video-uniform video.keep-left {
+      object-position: left center;
+    }
+    .video-uniform:hover {
+      transform: translateY(-3px) scale(1.018);
+      box-shadow: var(--showcase-shadow-hover);
+    }
+    .video-uniform:hover video {
+      transform: scale(1.02);
+    }
+    .title-mv-vdp {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2em;
+      font-weight: 700;
+      background: linear-gradient(45deg, #b98222, #dfbd68);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      letter-spacing: 2px;
+      margin-bottom: 0.5em;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      padding-bottom: 0.2em;
+    }
+
+    .title-mv-vdp::after {
+      content: '';
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(45deg, #b98222, #dfbd68);
+      border-radius: 2px;
+    }
+
+    .title-mv-vdp img {
+      width: 1.5em;
+      filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+    }
+
+    /* ── Video Carousel ─────────────────────────────────────────── */
+    .video-carousel {
+      position: relative;
+      width: 100%;
+      padding-left: 72px;
+      padding-right: 72px;
+      box-sizing: border-box;
+    }
+    .carousel-slide  { display: none; width: 100%; }
+    .carousel-slide.active { display: block; animation: carouselFade 0.42s ease; }
+    .carousel-slide video,
+    .carousel-slide img  {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      transition: transform 0.35s ease, filter 0.35s ease;
+    }
+    .carousel-slide img {
+      background: rgba(255, 255, 255, 0.92);
+      object-fit: contain;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 54px;
+      height: 54px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--showcase-accent);
+      border: 1px solid rgba(173, 125, 48, 0.2);
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 999px;
+      line-height: 1;
+      font-size: 26px;
+      font-weight: 700;
+      box-shadow: 0 14px 28px rgba(92, 67, 26, 0.16);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: transform 0.24s ease, box-shadow 0.24s ease, background 0.24s ease, color 0.24s ease;
+      animation: arrowFloat 2.8s ease-in-out infinite;
+    }
+    .carousel-btn::before {
+      content: '';
+      position: absolute;
+      inset: 4px;
+      border-radius: inherit;
+      background: linear-gradient(145deg, rgba(232, 194, 111, 0.34), rgba(171, 116, 35, 0.1));
+      z-index: -1;
+    }
+    .carousel-btn:hover {
+      background: rgba(255, 255, 255, 0.94);
+      color: #8a5b16;
+      transform: translateY(-50%) scale(1.08);
+      box-shadow: 0 18px 36px rgba(92, 67, 26, 0.22);
+    }
+    .carousel-btn:active {
+      transform: translateY(-50%) scale(0.96);
+    }
+    .carousel-prev { left:  0; }
+    .carousel-next { right: 0; }
+    @media screen and (max-width: 768px) {
+      .video-carousel {
+        padding-left: 56px;
+        padding-right: 56px;
+      }
+      .carousel-btn {
+        width: 46px;
+        height: 46px;
+        font-size: 22px;
+      }
+    }
+    .carousel-dots { text-align: center; padding: 12px 0 4px; }
+    .carousel-dots .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(112, 146, 184, 0.34);
+      margin: 0 5px;
+      cursor: pointer;
+      transform: scale(1);
+      transition: background .24s ease, transform .24s ease, box-shadow .24s ease;
+    }
+    .carousel-dots .dot:hover {
+      transform: scale(1.18);
+      background: rgba(185, 130, 34, 0.42);
+    }
+    .carousel-dots .dot.active {
+      background: var(--showcase-accent);
+      transform: scale(1.2);
+      box-shadow: 0 0 0 6px rgba(185, 130, 34, 0.14);
+    }
+    .carousel-counter { text-align: center; font-size: 0.85em; color: #6d7692; margin-top: 2px; }
+    .showcase-view-labels {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      gap: 0.32rem;
+      align-items: center;
+      margin: 0 0 0.7rem;
+      padding: 0.18rem 0.08rem 0;
+    }
+    .showcase-view-labels .view-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 1.82rem;
+      padding: 0.28rem 0.12rem;
+      border-radius: 999px;
+      font-family: 'Montserrat', 'Google Sans', 'Noto Sans', sans-serif;
+      font-size: 0.64rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #f8fbff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 10px 24px rgba(43, 49, 109, 0.16);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: transform 0.24s ease, box-shadow 0.24s ease, filter 0.24s ease;
+    }
+    .showcase-view-labels .view-chip:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 28px rgba(43, 49, 109, 0.2);
+      filter: saturate(1.06);
+    }
+    .showcase-view-labels .view-chip.view-1 {
+      background: linear-gradient(135deg, rgba(66, 96, 215, 0.9), rgba(91, 128, 237, 0.86));
+    }
+    .showcase-view-labels .view-chip.view-2 {
+      background: linear-gradient(135deg, rgba(88, 105, 184, 0.9), rgba(128, 101, 205, 0.84));
+    }
+    .showcase-view-labels .view-chip.view-3 {
+      background: linear-gradient(135deg, rgba(116, 84, 192, 0.9), rgba(164, 95, 194, 0.84));
+    }
+    .showcase-view-labels .ghost-slot {
+      display: block;
+      min-height: 1.82rem;
+    }
+    #vc-btn-press .showcase-view-labels .view-chip,
+    #vc-door-open .showcase-view-labels .view-chip,
+    #vc-faucet-close .showcase-view-labels .view-chip {
+      min-height: 1.66rem;
+      padding: 0.2rem 1.5rem;
+      width: max-content;
+      justify-self: center;
+    }
+    #vc-btn-press .showcase-view-labels .ghost-slot,
+    #vc-door-open .showcase-view-labels .ghost-slot,
+    #vc-faucet-close .showcase-view-labels .ghost-slot {
+      min-height: 1.66rem;
+    }
+    #vc-cook .showcase-view-labels,
+    #vc-push-t .showcase-view-labels,
+    #vc-put-lion .showcase-view-labels {
+      width: 88.5%;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 0.24rem;
+      padding-left: 0;
+      padding-right: 0;
+      transform: translateX(-6.5%);
+    }
+    #vc-cook .showcase-view-labels .view-chip,
+    #vc-push-t .showcase-view-labels .view-chip,
+    #vc-put-lion .showcase-view-labels .view-chip {
+      min-height: 1.82rem;
+      padding: 0.28rem 0.12rem;
+      font-size: 0.64rem;
+      letter-spacing: 0.03em;
+    }
+    @media screen and (max-width: 768px) {
+      .showcase-view-labels {
+        gap: 0.22rem;
+        margin-bottom: 0.58rem;
+      }
+      .showcase-view-labels .view-chip {
+        min-height: 1.72rem;
+        padding: 0.28rem 0.14rem;
+        font-size: 0.58rem;
+        letter-spacing: 0.02em;
+      }
+      #vc-btn-press .showcase-view-labels .view-chip,
+      #vc-door-open .showcase-view-labels .view-chip,
+      #vc-faucet-close .showcase-view-labels .view-chip {
+        min-height: 1.56rem;
+        padding: 0.18rem 1.5rem;
+      }
+      #vc-cook .showcase-view-labels,
+      #vc-push-t .showcase-view-labels,
+      #vc-put-lion .showcase-view-labels {
+        width: 92%;
+        transform: translateX(-2.2%);
+      }
+    }
+
+
+    .paper-video-grid {
+      display: grid;
+      gap: 1.25rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .paper-video-grid.libero-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .paper-video-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 16px;
+      box-shadow: var(--showcase-shadow);
+      padding: 0.85rem;
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+    }
+    .paper-video-card:hover {
+      transform: translateY(-4px) scale(1.012);
+      box-shadow: var(--showcase-shadow-hover);
+    }
+    .paper-video-card video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 12px;
+      background: #111827;
+    }
+    .paper-video-card p {
+      margin-top: 0.7rem;
+      margin-bottom: 0;
+      color: #3f3525;
+      font-weight: 600;
+      text-align: center;
+    }
+    .vlabench-track-row {
+      margin: 2rem 0 2.4rem;
+    }
+    .vlabench-track-row .track-title {
+      margin-bottom: 0.8rem;
+      text-align: center;
+      color: #8a5b16;
+      font-weight: 700;
+    }
+    .vlabench-track-row .paper-video-card p {
+      font-size: 0.88rem;
+      font-weight: 500;
+      line-height: 1.45;
+      text-align: left;
+    }
+    .vlabench-track-row .track-videos {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+    @media screen and (max-width: 900px) {
+      .paper-video-grid.libero-grid,
+      .vlabench-track-row .track-videos {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .content .box,
+    .video-carousel .box,
+    .tldr-box {
+      border-radius: 16px;
+      transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+      box-shadow: var(--showcase-shadow);
+      transform-origin: center center;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+    }
+    .content .box:hover,
+    .video-carousel .box:hover,
+    .tldr-box:hover:hover {
+      transform: translateY(-4px) scale(1.012);
+      box-shadow: var(--showcase-shadow-hover);
+    }
+    .content .box img,
+    .content .box video,
+    .video-carousel img,
+    .video-carousel video {
+      transition: transform 0.35s ease, filter 0.35s ease;
+      transform-origin: center center;
+    }
+    .content .box:hover img,
+    .content .box:hover video,
+    .video-carousel:hover img,
+    .video-carousel:hover video {
+      transform: scale(1.015);
+      filter: saturate(1.03);
+    }
+
+    .table-showcase {
+      padding: 1.25rem 1.35rem;
+      background: linear-gradient(180deg, rgba(255, 250, 239, 0.98), rgba(249, 239, 216, 0.95));
+      border: 1px solid rgba(173, 125, 48, 0.18);
+      box-shadow: 0 16px 34px rgba(92, 67, 26, 0.12);
+      overflow: hidden;
+    }
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 12px;
+    }
+    .paper-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+      color: #3f3525;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .paper-table thead th {
+      background: linear-gradient(180deg, rgba(213, 164, 67, 0.18), rgba(150, 102, 34, 0.08));
+      color: #5b3d13;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      border-bottom: 1px solid rgba(173, 125, 48, 0.2);
+    }
+    .paper-table th,
+    .paper-table td {
+      padding: 0.9rem 0.85rem;
+      text-align: center;
+      vertical-align: middle;
+      border-bottom: 1px solid rgba(98, 73, 34, 0.09);
+      transition: background 0.24s ease, color 0.24s ease;
+    }
+    .paper-table th:first-child,
+    .paper-table td:first-child {
+      text-align: left;
+    }
+    .paper-table tbody tr:hover td {
+      background: rgba(210, 159, 55, 0.08);
+    }
+    .paper-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .paper-table .ours-row td {
+      background: linear-gradient(90deg, rgba(218, 169, 69, 0.18), rgba(244, 220, 162, 0.14));
+      font-weight: 700;
+      color: #5a3d14;
+    }
+    .paper-table .best {
+      font-weight: 700;
+      color: #9a6719;
+    }
+    .paper-table .table-group {
+      font-size: 1.05rem;
+    }
+    .paper-table .table-citation {
+      display: inline-block;
+      margin-left: 0.22rem;
+      color: #8a7550;
+      font-size: 0.9em;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .paper-table .avg-col {
+      font-weight: 700;
+      color: #6a4717;
+      white-space: nowrap;
+    }
+    .paper-table .bool-yes {
+      font-size: 1.5rem;
+      line-height: 1;
+      font-weight: 700;
+      color: #9a6719;
+    }
+    .paper-table .bool-no {
+      font-size: 1.2rem;
+      line-height: 1;
+      color: #8d92aa;
+      font-weight: 700;
+    }
+    .paper-table.compact th,
+    .paper-table.compact td {
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+    }
+    .paper-table .row-label {
+      font-weight: 700;
+      color: #5a3d14;
+    }
+    .top-spotlight .publication-links .button.is-dark {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+      box-shadow: 0 14px 26px rgba(10, 14, 30, 0.18);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+    }
+    .top-spotlight .publication-links .button.is-dark:hover {
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 18px 34px rgba(10, 14, 30, 0.24);
+    }
+    .top-spotlight .publication-links .button.is-dark .icon,
+    .top-spotlight .publication-links .button.is-dark span {
+      color: #ffffff !important;
+    }
+    .top-spotlight .publication-links .button.is-dark .ai-arxiv {
+      color: #ffffff !important;
+    }
+    .top-spotlight .publication-links .hf-icon {
+      display: inline-block;
+      font-size: 1.05rem;
+      line-height: 1;
+      transform: translateY(1px);
+    }
+
+    .top-spotlight {
+      position: relative;
+      overflow: visible;
+      background:
+        radial-gradient(circle at 14% 20%, rgba(232, 180, 80, 0.2), transparent 26%),
+        radial-gradient(circle at 84% 18%, rgba(247, 211, 124, 0.16), transparent 25%),
+        radial-gradient(circle at 50% 84%, rgba(181, 119, 31, 0.16), transparent 33%),
+        linear-gradient(135deg, #2c2418 0%, #4b3417 35%, #725018 68%, #9a762e 100%);
+      border-bottom: 1px solid rgba(244, 210, 132, 0.16);
+      box-shadow: inset 0 -18px 40px rgba(255, 255, 255, 0.05);
+    }
+    .top-spotlight::before,
+    .top-spotlight::after {
+      content: '';
+      position: absolute;
+      border-radius: 999px;
+      pointer-events: none;
+      filter: blur(4px);
+    }
+    .top-spotlight::before {
+      width: 420px;
+      height: 420px;
+      top: -160px;
+      left: -90px;
+      background: radial-gradient(circle, rgba(232, 180, 80, 0.22) 0%, rgba(232, 180, 80, 0.06) 56%, transparent 74%);
+    }
+    .top-spotlight::after {
+      width: 360px;
+      height: 360px;
+      right: -80px;
+      top: 20px;
+      background: radial-gradient(circle, rgba(248, 211, 124, 0.18) 0%, rgba(248, 211, 124, 0.05) 58%, transparent 74%);
+    }
+    .top-spotlight > * {
+      position: relative;
+      z-index: 1;
+    }
+    .top-spotlight .navbar {
+      background: transparent;
+      box-shadow: none;
+      position: relative;
+      z-index: 30;
+    }
+    .top-spotlight .navbar-menu,
+    .top-spotlight .navbar-start {
+      background: transparent;
+      overflow: visible;
+    }
+    .top-spotlight .navbar-link,
+    .top-spotlight .navbar-item,
+    .top-spotlight .navbar-item a {
+      color: #fff7df;
+    }
+    .top-spotlight .navbar-link:hover,
+    .top-spotlight .navbar-item:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #f0c76a;
+    }
+    .top-spotlight .navbar-dropdown {
+      position: absolute;
+      top: calc(100% - 4px);
+      left: 50%;
+      min-width: 220px;
+      padding: 0.45rem 0;
+      background: rgba(43, 31, 16, 0.9);
+      border: 1px solid rgba(239, 198, 111, 0.18);
+      border-radius: 16px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transform: translateX(-50%);
+      z-index: 1000;
+      border-top: none;
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    }
+    .top-spotlight .navbar-item.has-dropdown {
+      position: relative;
+      padding-bottom: 0.6rem;
+      overflow: visible;
+      z-index: 40;
+    }
+    .top-spotlight .navbar-item.has-dropdown .navbar-link {
+      position: relative;
+      z-index: 2;
+    }
+    .top-spotlight .navbar-item.has-dropdown::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      height: 18px;
+      pointer-events: none;
+    }
+    .top-spotlight .navbar-item.has-dropdown:hover .navbar-dropdown,
+    .top-spotlight .navbar-item.has-dropdown:focus-within .navbar-dropdown {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+    .top-spotlight .navbar-dropdown .navbar-item {
+      color: #fff6df;
+      padding: 0.72rem 1.1rem;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+      white-space: nowrap;
+    }
+    .top-spotlight .navbar-dropdown .navbar-item:hover,
+    .top-spotlight .navbar-dropdown .navbar-item:focus {
+      background: rgba(239, 198, 111, 0.16);
+      color: #ffffff;
+      transform: translateX(3px);
+    }
+    .top-spotlight .hero {
+      background: transparent;
+      padding-bottom: 1rem;
+      height: 100%;
+    }
+    .top-spotlight .hero-body {
+      padding-top: 2.2rem;
+      padding-bottom: 2.8rem;
+      display: flex;
+      align-items: center;
+      min-height: clamp(420px, calc(56.25vw - 60px), calc(92vh - 60px));
+    }
+    .top-spotlight .publication-title,
+    .top-spotlight .publication-subtitle,
+    .top-spotlight .publication-subtitle strong,
+    .top-spotlight .publication-authors,
+    .top-spotlight .publication-authors .author-block,
+    .top-spotlight .publication-authors .author-block a,
+    .top-spotlight .publication-venue,
+    .top-spotlight .mv-vdp {
+      color: #ffffff !important;
+      text-shadow: 0 2px 10px rgba(12, 16, 30, 0.24);
+    }
+    .top-spotlight .publication-title,
+    .top-spotlight .mv-vdp {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .top-spotlight .publication-subtitle,
+    .top-spotlight .publication-subtitle strong {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .top-spotlight .publication-authors {
+      font-family: "Times New Roman", Times, serif;
+      line-height: 1.95;
+    }
+    .top-spotlight .publication-authors .author-block {
+      font-family: "Times New Roman", Times, serif;
+      margin: 0 0.42rem 0.35rem;
+    }
+    .top-spotlight .hero-author-notes,
+    .top-spotlight .hero-author-affiliations,
+    .top-spotlight .hero-author-affiliations .author-block,
+    .top-spotlight .hero-author-notes .author-block {
+      font-family: "Times New Roman", Times, serif;
+    }
+    .top-spotlight .hero-author-list {
+      max-width: 980px;
+      margin: 1.1rem auto 0.55rem !important;
+    }
+    .top-spotlight .hero-author-list br {
+      display: block;
+      content: '';
+      margin-top: 0.5rem;
+    }
+    .top-spotlight .hero-author-notes {
+      margin: 1rem auto 0.35rem !important;
+      opacity: 0.96;
+    }
+    .top-spotlight .hero-author-affiliations {
+      margin: 0.55rem auto 0 !important;
+      opacity: 0.94;
+    }
+    .top-spotlight .publication-links {
+      margin-top: 1.4rem;
+    }
+    .tldr-box {
+      background: linear-gradient(135deg, rgba(255, 250, 238, 0.98), rgba(249, 238, 210, 0.95)) !important;
+      border-left: 5px solid #c4922f !important;
+      box-shadow: 0 16px 34px rgba(92, 67, 26, 0.12) !important;
+    }
+    .tldr-box .title,
+    .tldr-box .title.is-4 {
+      color: #5a3d14 !important;
+    }
+    .tldr-box p {
+      color: #5e503d !important;
+    }
+    .real-world-preview {
+      padding: 1.25rem;
+    }
+    .real-world-demo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+    .real-world-demo-card {
+      overflow: hidden;
+      border-radius: 12px;
+      background: rgba(255, 253, 247, 0.82);
+      border: 1px solid rgba(173, 125, 48, 0.18);
+      box-shadow: 0 10px 24px rgba(92, 67, 26, 0.10);
+    }
+    .real-world-demo-card video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #f4e5c3;
+    }
+    .real-world-demo-caption {
+      padding: 0.9rem 1rem 1.05rem;
+    }
+    .real-world-demo-instruction {
+      margin: 0;
+      color: #4d4335;
+      line-height: 1.45;
+      font-weight: 600;
+    }
+    @media screen and (max-width: 900px) {
+      .real-world-demo-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .hero.is-light.is-small {
+      background: linear-gradient(180deg, rgba(255, 245, 220, 0.78), rgba(255, 250, 238, 0.25));
+    }
+    footer.footer {
+      background: linear-gradient(180deg, rgba(255, 245, 222, 0.82), rgba(244, 229, 195, 0.92));
+      color: var(--text-secondary);
+      border-top: 1px solid rgba(173, 125, 48, 0.14);
+    }
+
+    @keyframes carouselFade {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes arrowFloat {
+      0%, 100% {
+        box-shadow: 0 14px 28px rgba(92, 67, 26, 0.18);
+      }
+      50% {
+        box-shadow: 0 18px 36px rgba(92, 67, 26, 0.24);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .video-uniform,
+      .video-uniform video,
+      .carousel-slide.active,
+      .carousel-slide video,
+      .carousel-slide img,
+      .carousel-btn,
+      .carousel-dots .dot,
+      .content .box,
+      .video-carousel .box,
+      .tldr-box {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    /* ===== REAL-WORLD VIDEO GRID ===== */
+    .rw-video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .rw-video-card {
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(255, 253, 247, 0.9);
+      border: 1px solid rgba(173, 125, 48, 0.18);
+      box-shadow: 0 6px 20px rgba(92, 67, 26, 0.09);
+    }
+    .rw-video-wrap {
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #111;
+    }
+    .rw-video-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .rw-video-caption {
+      padding: 0.65rem 0.9rem 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .rw-tier-tag {
+      display: inline-block;
+      width: fit-content;
+      background: linear-gradient(135deg, #c4922f, #e8b455);
+      color: #fff;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 2px 9px;
+      border-radius: 20px;
+    }
+    .rw-video-caption p {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      margin: 0;
+      line-height: 1.45;
+    }
+    @media (max-width: 640px) {
+      .rw-video-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== CONTRIBUTION BLOCKS ===== */
+    .contribution-block {
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.25rem;
+      border-radius: 12px;
+      background: rgba(255, 248, 232, 0.7);
+      border: 1px solid rgba(173, 125, 48, 0.2);
+      box-shadow: 0 4px 16px rgba(92, 67, 26, 0.07);
+    }
+    .contribution-title {
+      font-size: 1.15rem !important;
+      font-weight: 700 !important;
+      color: var(--heading-primary) !important;
+      margin-bottom: 0.65rem !important;
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .contribution-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #c4922f, #e8b455);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ===== EMBODIED COT EXAMPLE ===== */
+    .ecot-example {
+      margin: 2rem 0 1.5rem;
+      padding: 1.5rem 1.75rem;
+      border-radius: 14px;
+      background: rgba(255, 253, 247, 0.95);
+      border: 1px solid rgba(173, 125, 48, 0.22);
+      box-shadow: 0 8px 24px rgba(92, 67, 26, 0.08);
+    }
+    .ecot-example-header {
+      margin-bottom: 1.25rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(173, 125, 48, 0.15);
+    }
+    .ecot-example-header .title.is-4 {
+      color: var(--heading-primary);
+      margin-bottom: 0.5rem !important;
+    }
+    .ecot-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+    .ecot-meta span {
+      background: rgba(196, 146, 47, 0.12);
+      padding: 2px 10px;
+      border-radius: 20px;
+      border: 1px solid rgba(173, 125, 48, 0.18);
+    }
+    .ecot-block {
+      padding: 1rem 1.15rem;
+      margin-bottom: 0.85rem;
+      border-radius: 10px;
+      background: rgba(255, 248, 232, 0.65);
+      border: 1px solid rgba(173, 125, 48, 0.14);
+    }
+    .ecot-block:last-child {
+      margin-bottom: 0;
+    }
+    .ecot-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #c4922f, #e8b455);
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 2px 9px;
+      border-radius: 20px;
+      margin-bottom: 0.55rem;
+    }
+    .ecot-block p {
+      margin: 0.35rem 0 0;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      color: var(--text-primary);
+    }
+    .ecot-block ul {
+      margin: 0.4rem 0 0;
+      padding-left: 1.2rem;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--text-primary);
+    }
+    .ecot-block li {
+      margin-bottom: 0.2rem;
+    }
+    .ecot-block li.ecot-current {
+      font-weight: 600;
+      color: #8a5b16;
+    }
+    .ecot-block details {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .ecot-block summary {
+      cursor: pointer;
+      color: #8a5b16;
+      font-weight: 600;
+    }
+    .ecot-waypoints {
+      margin-top: 0.4rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.78rem;
+      line-height: 1.6;
+      word-break: break-all;
+    }
+
+    /* ===== VIDEO BACKGROUND HERO ===== */
+    .top-spotlight {
+      overflow: hidden !important;
+      background: #080502 !important;
+      min-height: clamp(480px, 56.25vw, 92vh); /* 56.25vw = 100vw × 9/16 */
+    }
+    .top-spotlight::before,
+    .top-spotlight::after {
+      display: none !important;
+    }
+    .hero-video-grid-bg {
+      position: absolute !important;
+      inset: 0 !important;
+      z-index: 0 !important;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.08);
+    }
+    .hero-video-grid-bg .video-cell {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-video-grid-bg .video-cell video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .video-cell-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 28px 12px 10px;
+      background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .hero-video-grid-bg .video-cell:nth-child(2) .video-cell-caption,
+    .hero-video-grid-bg .video-cell:nth-child(4) .video-cell-caption {
+      left: auto;
+      right: 0;
+      width: auto;
+      max-width: 72%;
+      padding: 22px 14px 12px 28px;
+      align-items: flex-end;
+      text-align: right;
+      background: linear-gradient(to top left, rgba(0, 0, 0, 0.78) 0%, transparent 72%);
+    }
+    .video-cell-tag {
+      display: inline-block;
+      width: fit-content;
+      background: rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.95);
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 3px;
+      border: 1px solid rgba(255,255,255,0.28);
+    }
+    .video-cell-instruction {
+      color: #ffffff;
+      font-size: 1.08rem;
+      font-weight: 600;
+      line-height: 1.45;
+      text-shadow: 0 1px 8px rgba(0, 0, 0, 0.85), 0 0 2px rgba(0, 0, 0, 0.55);
+      margin: 0;
+    }
+    .hero-video-grid-bg .video-cell:nth-child(2) .video-cell-instruction,
+    .hero-video-grid-bg .video-cell:nth-child(4) .video-cell-instruction {
+      text-align: right;
+    }
+    .hero-video-overlay {
+      position: absolute !important;
+      inset: 0 !important;
+      background: linear-gradient(
+        to bottom,
+        rgba(6, 4, 1, 0.60) 0%,
+        rgba(6, 4, 1, 0.38) 45%,
+        rgba(6, 4, 1, 0.62) 100%
+      );
+      z-index: 1 !important;
+    }
+  </style>
+
+</head>
+<body>
+
+  
+
+<div class="top-spotlight">
+
+  <!-- 2×2 video background grid -->
+  <div class="hero-video-grid-bg">
+    <div class="video-cell">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="static/videos/real-world/Basic_move_toyx3.mp4" type="video/mp4">
+      </video>
+      <div class="video-cell-caption">
+        <span class="video-cell-tag">Basic</span>
+        <p class="video-cell-instruction">Put the toy car into the drawer.</p>
+      </div>
+    </div>
+    <div class="video-cell">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="static/videos/real-world/Distractor_move_toy.mp4" type="video/mp4">
+      </video>
+      <div class="video-cell-caption">
+        <span class="video-cell-tag">Distractors</span>
+        <p class="video-cell-instruction">Put the toy into the drawer.</p>
+      </div>
+    </div>
+    <div class="video-cell">
+      <video autoplay muted loop playsinline preload="metadata" style="object-position: center bottom;">
+        <source src="static/videos/real-world/Semantic_lower_drawer.mp4" type="video/mp4">
+      </video>
+      <div class="video-cell-caption">
+        <span class="video-cell-tag">Semantic</span>
+        <p class="video-cell-instruction">Put the toy into the lower drawer.</p>
+      </div>
+    </div>
+    <div class="video-cell">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="static/videos/real-world/Long_move_toy.mp4" type="video/mp4">
+      </video>
+      <div class="video-cell-caption">
+        <span class="video-cell-tag">Long-horizon</span>
+        <p class="video-cell-instruction">Put the non-toy items into the upper drawer, and put the toys into the second drawer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-video-overlay"></div>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+
+    </div>
+
+  </div>
+</nav>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <img src="static/images/Logo.webp?v=2" style="width:2.5em;vertical-align: middle;border-radius: 14px;box-shadow: 0 2px 12px rgba(0,0,0,0.35);" alt="Logo"/>
+            <span class="mv-vdp" style="vertical-align: middle;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">ERVLA</span>
+            </h1>
+          <h2 class="subtitle is-3 publication-subtitle ", style="width: 100%; margin-bottom: 20px; font-size: 1.6rem; white-space: normal;">
+            <strong>Revisiting Embodied Chain-of-Thought for Generalizable Robotic Manipulation</strong>
+          </h2>
+          
+          
+          <div class="is-size-5 publication-authors hero-author-list", style="width: 100%; margin: 15px auto;", >
+            <span class="author-block">Anonymous Authors</span>
+          </div>
+
+          <div class="is-size-5 publication-authors hero-author-affiliations">
+            <span class="author-block">Paper under double-blind review</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <!--
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="javascript:void(0)"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv" style="color: #B31B1B;"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="javascript:void(0)"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="javascript:void(0)"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <span class="hf-icon" aria-hidden="true">🤗</span>
+                  </span>
+                  <span>Hugging Face</span>
+                  </a>
+              </span>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          Embodied chain-of-thought (CoT) aims to connect reasoning with robot action, yet its effective form and integration remain underexplored.
+          We revisit embodied CoT as reasoning pre-training for action control and show that useful CoT must link task understanding to concrete action guidance: high-level reasoning alone gives limited gains, while action-oriented signals such as movement and end-effector trajectories in 2D image space are more effective.
+          We further identify <strong>CoT contamination</strong>, where dense but noisy grounding labels, such as unstable bounding boxes or drifting gripper coordinates, overwrite useful representations and harm control.
+          Reasoning dropout mitigates this issue by making explicit CoT optional and encouraging reasoning to be internalized into action-relevant states.
+          Based on these insights, we build the largest embodied CoT corpus to date, with <strong>978,743 trajectories, 226.3M samples, and 2592.5 hours</strong>, and present ERVLA, a reasoning-capable VLA whose reasoning mode can be switched on or off.
+          Unlike knowledge-insulated designs that block action gradients, ERVLA internalizes embodied reasoning as semantic guidance while allowing action losses to shape the VLM backbone, enabling fully end-to-end training.
+          ERVLA achieves state-of-the-art results on LIBERO-Plus and VLABench, especially in out-of-distribution settings, with <strong>86.9%</strong> average success on LIBERO-Plus and <strong>53.2%</strong> average success on VLABench.
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+
+<!-- CORE CONTRIBUTION SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathvista_other">Core Contributions</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+
+          <div class="contribution-block">
+            <h3 class="contribution-title">
+              <span class="contribution-tag">Contribution 1</span>
+              A Large Scale Embodied CoT Corpus
+            </h3>
+            <p>We construct a large scale embodied chain of thought corpus with <strong>978,743 trajectories, 226.3M samples, and 2,592.5 hours</strong> of robot manipulation data. The corpus covers goal planning, subtask decomposition, object grounding, gripper position, motion description, single arm and dual arm manipulation, and multi view observations.</p>
+          </div>
+
+          <div class="contribution-block">
+            <h3 class="contribution-title">
+              <span class="contribution-tag">Contribution 2</span>
+              Understanding What Makes Embodied CoT Useful
+            </h3>
+            <p>We systematically analyze different embodied CoT fields and find that high level reasoning alone provides limited benefit. Action oriented signals, such as movement descriptions and point trajectories, are more effective because they directly connect semantic understanding to executable robot motion.</p>
+          </div>
+
+          <div class="contribution-block">
+            <h3 class="contribution-title">
+              <span class="contribution-tag">Contribution 3</span>
+              ERVLA: Reasoning as Representation Shaping
+            </h3>
+            <p>We propose ERVLA, a reasoning capable VLA model that combines explicit embodied CoT supervision, reasoning dropout, a choice branch, knowledge truncation, and a diffusion based action policy. ERVLA enables end to end training where action losses can shape the VLM backbone.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATASET SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathvista_other">Dataset</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>We transform raw manipulation trajectories into structured embodied reasoning supervision. Instead of using free form explanations, each trajectory is decomposed into hierarchical and grounded reasoning fields, including goal, visible objects, planning, subtask reasoning, movement description, gripper pose, and point trajectory.</p>
+
+          <div class="box" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="content has-text-centered">
+              <img src="static/images/Overview.png" alt="Embodied CoT dataset overview" width="100%" style="max-width: 1200px; height: auto;"/>
+              <p>Figure 1: Embodied CoT dataset and reasoning supervision overview.</p>
+            </div>
+          </div>
+
+          <div class="ecot-example">
+            <div class="ecot-example-header">
+              <h3 class="title is-4">Structured CoT Example</h3>
+              <p class="ecot-meta">
+                <span>t = 16</span>
+                <span>DROID</span>
+                <span>Subtask 2 / 9</span>
+                <span>Frames 12–71</span>
+              </p>
+            </div>
+
+            <div class="ecot-block">
+              <span class="ecot-tag">Instruction</span>
+              <p>Pick up the clothes from the table and put them in the box.</p>
+            </div>
+
+            <div class="ecot-block">
+              <span class="ecot-tag">Understanding</span>
+              <p><strong>Goal:</strong> Pick up the clothes from the table and put them in the box.</p>
+            </div>
+
+            <div class="ecot-block">
+              <span class="ecot-tag">Grounding</span>
+              <p><strong>Visible objects (cam0):</strong></p>
+              <ul>
+                <li><strong>box</strong> — [553, 173, 830, 534]</li>
+                <li><strong>table</strong> — [131, 373, 966, 989]</li>
+                <li><strong>tripod</strong> — [21, 192, 168, 453]</li>
+              </ul>
+            </div>
+
+            <div class="ecot-block">
+              <span class="ecot-tag">Planning</span>
+              <p><strong>Current subtask:</strong> contact and lift first cloth</p>
+              <p><strong>Subtask reasoning:</strong> The robot arm is positioned above the table, approaching the first cloth located to the left of the orange box. No objects have been moved yet. The gripper is open and preparing to make contact with the cloth. The next action is to lower the arm and close the gripper to grasp the cloth.</p>
+              <details>
+                <summary>Full plan (9 subtasks)</summary>
+                <ul>
+                  <li>Approach first cloth</li>
+                  <li class="ecot-current">contact and lift first cloth</li>
+                  <li>Transport first cloth to box</li>
+                  <li>Release first cloth into box</li>
+                  <li>Retract and reposition after first drop</li>
+                  <li>Approach second cloth</li>
+                  <li>contact and lift second cloth</li>
+                  <li>Transport second cloth to box</li>
+                  <li>Release second cloth into box</li>
+                </ul>
+              </details>
+            </div>
+
+            <div class="ecot-block">
+              <span class="ecot-tag">Acting</span>
+              <p><strong>Movement:</strong> move forward 3 cm, move left 5 cm, move down 3 cm, tilt forward 10 degrees, rotate clockwise 10 degrees, keep gripper open</p>
+              <p><strong>Gripper pose (cam0):</strong> [533, 388]</p>
+              <details>
+                <summary>Point trajectory (10 waypoints, cam0)</summary>
+                <p class="ecot-waypoints">[527, 385] → [521, 383] → [513, 382] → [504, 380] → [495, 379] → [484, 379] → [474, 382] → [464, 387] → [454, 394] → [443, 402]</p>
+              </details>
+            </div>
+          </div>
+
+          <p>The dataset is designed to make embodied CoT a scalable training signal. High level fields provide semantic intent, grounded fields align language with visual entities, planning fields expose task progress, and action fields connect reasoning to executable robot motion. The corpus is built from several open VLA datasets, including Bridge, Fractal, Droid, MolmoAct, and AgiBot.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathvista_other">Method</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>ERVLA uses a VLM backbone for embodied reasoning and a diffusion transformer for continuous action generation. A choice branch injects action level supervision into the VLM, while knowledge truncation allows the action model to attend to clean semantic memory instead of shortcut control tokens.</p>
+
+          <div class="box" style="margin-top: 1.5rem; margin-bottom: 1rem;">
+            <div class="content has-text-centered">
+              <img src="static/images/Method.png?v=3" alt="ERVLA architecture and training design" width="100%" style="max-width: 1200px; height: auto;"/>
+              <p>Figure 2: ERVLA architecture and training design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Simulation-->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathvista_other">Experiments</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content">
+          <h2 class="title is-3 has-text-centered">LIBERO-Plus Zero-Shot Transfer</h2>
+          <p class="has-text-justified">
+            We evaluate ERVLA on LIBERO-Plus, where models are post-trained on LIBERO and evaluated by zero-shot direct transfer under task-suite and perturbation shifts. ERVLA reaches a <strong>86.9%</strong> total success rate, outperforming strong VLA baselines including OpenVLA-OFT, π<sub>0</sub>, π<sub>0</sub>-FAST, PokeVLA, and π<sub>0.5</sub>. The gains are especially clear under out-of-distribution conditions such as camera, robot, language, lighting, background, noise, and layout perturbations.
+          </p>
+          <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
+            <div class="content has-text-centered table-showcase">
+              <div class="table-scroll">
+                <table class="paper-table">
+                  <thead>
+                    <tr>
+                      <th rowspan="2">Method</th>
+                      <th colspan="4" class="table-group">Task Suite</th>
+                      <th colspan="7" class="table-group">Perturbation Type</th>
+                      <th rowspan="2" class="avg-col">Total<br>Succ. (%) ↑</th>
+                    </tr>
+                    <tr>
+                      <th>Spatial</th>
+                      <th>Object</th>
+                      <th>Goal</th>
+                      <th>Long</th>
+                      <th>Camera</th>
+                      <th>Robot</th>
+                      <th>Language</th>
+                      <th>Light</th>
+                      <th>Background</th>
+                      <th>Noise</th>
+                      <th>Layout</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ECoT<span class="table-citation">(Zawalski et al., 2024)</span></td>
+                      <td>31.8</td><td>27.9</td><td>30.6</td><td>8.6</td><td>0.3</td><td>26.8</td><td>40.2</td><td>42.6</td><td>16.4</td><td>10.2</td><td>36.9</td><td class="avg-col">24.3</td>
+                    </tr>
+                    <tr>
+                      <td>OpenVLA-OFT<span class="table-citation">(Kim et al., 2024)</span></td>
+                      <td>84.0</td><td>66.5</td><td>63.0</td><td>66.4</td><td>56.4</td><td>31.9</td><td>79.5</td><td>88.7</td><td>93.3</td><td>75.8</td><td>74.2</td><td class="avg-col">69.6</td>
+                    </tr>
+                    <tr>
+                      <td>π<sub>0</sub>-FAST<span class="table-citation">(Black et al., 2025)</span></td>
+                      <td>74.4</td><td>72.7</td><td>57.6</td><td>43.4</td><td>65.1</td><td>21.6</td><td>61.0</td><td>73.2</td><td>73.2</td><td>74.4</td><td>68.8</td><td class="avg-col">61.6</td>
+                    </tr>
+                    <tr>
+                      <td>PokeVLA<span class="table-citation">(Zhu et al., 2025)</span></td>
+                      <td>85.4</td><td>81.8</td><td>77.6</td><td>72.7</td><td class="best">84.7</td><td>46.1</td><td>84.8</td><td>94.6</td><td>82.6</td><td>89.8</td><td>77.2</td><td class="avg-col">79.3</td>
+                    </tr>
+                    <tr>
+                      <td>π<sub>0.5</sub><span class="table-citation">(Black et al., 2025)</span></td>
+                      <td>90.4</td><td class="best">89.9</td><td class="best">81.0</td><td>80.8</td><td>71.7</td><td class="best">75.5</td><td>85.9</td><td class="best">96.1</td><td class="best">95.7</td><td>86.4</td><td class="best">87.5</td><td class="avg-col">85.5</td>
+                    </tr>
+                    <tr>
+                      <td>No Choice + Knowledge Isolation</td>
+                      <td>83.8</td><td>78.6</td><td>71.4</td><td>69.0</td><td>80.4</td><td>43.8</td><td>81.0</td><td>91.6</td><td>79.2</td><td>85.4</td><td>74.6</td><td class="avg-col">76.5</td>
+                    </tr>
+                    <tr>
+                      <td>Choice + No Knowledge Truncation</td>
+                      <td>89.2</td><td>88.6</td><td>79.4</td><td>79.8</td><td>70.8</td><td>73.4</td><td>84.6</td><td>94.2</td><td>94.4</td><td>85.6</td><td>86.2</td><td class="avg-col">84.7</td>
+                    </tr>
+                    <tr class="ours-row">
+                      <td>ERVLA (Ours)</td>
+                      <td class="best">96.2</td><td>89.6</td><td>79.6</td><td class="best">82.1</td><td>77.2</td><td>75.3</td><td class="best">87.1</td><td>95.1</td><td>94.7</td><td class="best">92.3</td><td>86.4</td><td class="avg-col best">86.9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>Table 1: Quantitative comparison on LIBERO-Plus. Models are post-trained on LIBERO and evaluated by zero-shot direct transfer across task suites and perturbation types. ERVLA obtains the best total success rate.</p>
+            </div>
+          </div>
+
+          <div class="paper-video-grid libero-grid" aria-label="LIBERO-Plus qualitative rollouts">
+            <div class="paper-video-card">
+              <video autoplay muted loop playsinline controls preload="metadata">
+                <source src="static/videos/libero-plus/Background%20Textures%20rollout_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_tb_12_success_0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p>Background Textures</p>
+            </div>
+            <div class="paper-video-card">
+              <video autoplay muted loop playsinline controls preload="metadata">
+                <source src="static/videos/libero-plus/Sensor%20Noise%20rollout_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_view_0_0_100_0_0_initstate_0_noise_8_success_0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p>Sensor Noise</p>
+            </div>
+            <div class="paper-video-card">
+              <video autoplay muted loop playsinline controls preload="metadata">
+                <source src="static/videos/libero-plus/Language%20Instructions%20rollout_activate_the_cooking_appliance_and_place_the_italian_coffee_maker_on_the_heating_area_success_0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p>Language Instructions</p>
+            </div>
+            <div class="paper-video-card">
+              <video autoplay muted loop playsinline controls preload="metadata">
+                <source src="static/videos/libero-plus/Camera%20Viewpoints%20rollout_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_view_0_0_100_350_350_initstate_0_success_0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p>Camera Viewpoints</p>
+            </div>
+            <div class="paper-video-card">
+              <video autoplay muted loop playsinline controls preload="metadata">
+                <source src="static/videos/libero-plus/Robot%20Initial%20States%20rollout_put_both_moka_pots_on_the_stove_view_0_0_100_0_0_initstate_139_success_0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p>Robot Initial States</p>
+            </div>
+            <div class="paper-video-card">
+              <video autoplay muted loop playsinline controls preload="metadata">
+                <source src="static/videos/libero-plus/Light%20Condition%20rollout_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_light_1_success_0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p>Light Condition</p>
+            </div>
+          </div>
+
+          <!-- VLABench Section -->
+          <h2 class="title is-3 has-text-centered">VLABench Generalization</h2>
+          <p class="has-text-justified">
+            VLABench evaluates semantic and distribution-shift generalization across in-distribution, cross-category, commonsense, instruction-following, and texture-variation tracks. ERVLA achieves the best average success rate, progress score, and intention score among compared methods, showing that embodied CoT is most useful when it becomes an action-relevant representation rather than a mandatory autoregressive explanation.
+          </p>
+
+          <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
+            <div class="content has-text-centered table-showcase">
+              <div class="table-scroll">
+                <table class="paper-table">
+                  <thead>
+                    <tr>
+                      <th rowspan="2">Method</th>
+                      <th colspan="5" class="table-group">Success Rate by Track (%) ↑</th>
+                      <th colspan="3" class="table-group">Average ↑</th>
+                    </tr>
+                    <tr>
+                      <th>In-dist.</th>
+                      <th>Category</th>
+                      <th>Common</th>
+                      <th>Instruction</th>
+                      <th>Texture</th>
+                      <th>SR</th>
+                      <th>PS</th>
+                      <th>IS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>π<sub>0</sub><span class="table-citation">(Black et al., 2024)</span></td>
+                      <td>47.0</td><td>21.2</td><td>29.1</td><td>17.3</td><td>32.2</td><td class="avg-col">29.4</td><td>44.1</td><td>55.0</td>
+                    </tr>
+                    <tr>
+                      <td>π<sub>0</sub>-FAST<span class="table-citation">(Black et al., 2025)</span></td>
+                      <td>56.2</td><td>31.0</td><td>38.0</td><td>35.0</td><td>39.0</td><td class="avg-col">39.8</td><td>49.5</td><td>58.6</td>
+                    </tr>
+                    <tr>
+                      <td>ACoT-VLA<span class="table-citation">(Zhang et al., 2025)</span></td>
+                      <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="avg-col">47.4</td><td>63.5</td><td>-</td>
+                    </tr>
+                    <tr>
+                      <td>π<sub>0.5</sub><span class="table-citation">(Black et al., 2025)</span></td>
+                      <td>65.4</td><td>38.2</td><td>43.9</td><td>48.2</td><td>44.9</td><td class="avg-col">48.1</td><td>62.3</td><td>64.9</td>
+                    </tr>
+                    <tr>
+                      <td>Choice + No Knowledge Truncation</td>
+                      <td>62.0</td><td>42.4</td><td>43.0</td><td>53.6</td><td>35.0</td><td class="avg-col">47.2</td><td>59.8</td><td>63.4</td>
+                    </tr>
+                    <tr class="ours-row">
+                      <td>ERVLA (Ours)</td>
+                      <td class="best">69.7</td><td class="best">47.0</td><td class="best">44.0</td><td class="best">58.0</td><td class="best">47.4</td><td class="avg-col best">53.2</td><td class="best">65.9</td><td class="best">70.4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>Table 2: Comparison on VLABench. SR, PS, and IS denote success rate, progress score, and intention score. ERVLA obtains the strongest average performance across semantic and distribution-shift tracks.</p>
+            </div>
+          </div>
+
+          <div class="vlabench-track-row">
+            <h3 class="title is-4 track-title">Track 1: In distribution</h3>
+            <div class="track-videos">
+                <div class="paper-video-card">
+                  <video autoplay muted loop playsinline controls preload="metadata">
+                    <source src="static/videos/vlabench/track1/add%20condinent/0_success_True_progress_1.00%20(1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p>Add bbq-sauce to the dish</p>
+                </div>
+                <div class="paper-video-card">
+                  <video autoplay muted loop playsinline controls preload="metadata">
+                    <source src="static/videos/vlabench/track1/insert%20flower/2f24282f9ae719ba23d370d3ebf13eca.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p>Insert the rose into the vase_seen.</p>
+                </div>
+            </div>
+          </div>
+          <div class="vlabench-track-row">
+            <h3 class="title is-4 track-title">Track 2: Cross Category</h3>
+            <div class="track-videos">
+                <div class="paper-video-card">
+                  <video autoplay muted loop playsinline controls preload="metadata">
+                    <source src="static/videos/vlabench/track2/add/32_success_True_progress_1.00.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p>Add hotsauce to the dish</p>
+                </div>
+                <div class="paper-video-card">
+                  <video autoplay muted loop playsinline controls preload="metadata">
+                    <source src="static/videos/vlabench/track2/insert/2_success_True_progress_1.00.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p>Insert the daisy_flower into the vase_unseen.</p>
+                </div>
+            </div>
+          </div>
+          <div class="vlabench-track-row">
+            <h3 class="title is-4 track-title">Track 3: Commonsense Reasoning</h3>
+            <div class="track-videos">
+                <div class="paper-video-card">
+                  <video autoplay muted loop playsinline controls preload="metadata">
+                    <source src="static/videos/vlabench/track3/add/0_success_True_progress_1.00%20(1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p>The flavors in this dish are quite mild, it would benefit from something that adds a bold and tangy character.</p>
+                </div>
+                <div class="paper-video-card">
+                  <video autoplay muted loop playsinline controls preload="metadata">
+                    <source src="static/videos/vlabench/track3/insert/8_success_True_progress_1.00.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p>Find the exquisite flower associated with admiration and place it gracefully into the vase.</p>
+                </div>
+            </div>
+          </div>
+          <div class="vlabench-track-row">
+            <h3 class="title is-4 track-title">Track 4: Semantic Instruction Following</h3>
+            <div class="track-videos">
+                <div class="paper-video-card">
+                  <video autoplay muted loop playsinline controls preload="metadata">
+                    <source src="static/videos/vlabench/track4/add/4_success_True_progress_1.00.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p>While packing the picnic basket, don't forget to include something for the sandwiches that adds a zesty twist.</p>
+                </div>
+                <div class="paper-video-card">
+                  <video autoplay muted loop playsinline controls preload="metadata">
+                    <source src="static/videos/vlabench/track4/insert/5_success_True_progress_1.00.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p>It's my mother's birthday today. She loves chrysanthemums. Please take the freshest chrysanthemums you can find and place them in her favorite vase as a surprise.</p>
+                </div>
+            </div>
+          </div>
+          <div class="vlabench-track-row">
+            <h3 class="title is-4 track-title">Track 5: Unseen Texture Variation</h3>
+            <div class="track-videos">
+                <div class="paper-video-card">
+                  <video autoplay muted loop playsinline controls preload="metadata">
+                    <source src="static/videos/vlabench/track6/ADD/4_success_True_progress_1.00.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p>Add bbq-sauce to the dish</p>
+                </div>
+                <div class="paper-video-card">
+                  <video autoplay muted loop playsinline controls preload="metadata">
+                    <source src="static/videos/vlabench/track6/INSERT/39_success_True_progress_1.00.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p>Insert the rose into the vase_seen.</p>
+                </div>
+            </div>
+          </div>
+
+          <h2 class="title is-3 has-text-centered">VLM-to-VLA Transfer and CoT Scaling</h2>
+          <p class="has-text-justified">
+            We study whether embodied CoT can turn stronger vision-language models into stronger action policies, and whether this supervision scales with more pre-training data. On diverse VLM backbones evaluated under a unified interface, performance without explicit CoT shows only weak or even negative correlation with VLM capability on LIBERO and VLABench. With embodied CoT supervision, stronger VLMs transfer more reliably: the best results are dominated by the Qwen3-VL family, indicating that CoT acts as a transfer interface that converts semantic priors into action-relevant representations rather than merely adding extra text.
+          </p>
+          <p class="has-text-justified">
+            Naive autoregressive CoT plus action-token decoding does not scale reliably as more robot CoT data is added. ERVLA instead uses CoT as representation-shaping supervision together with a choice branch, knowledge truncation, and flow-based action learning. As embodied CoT pre-training grows from 35M to 226.3M samples, ERVLA improves steadily on both LIBERO-Plus and VLABench, whereas autoregressive CoT+FAST and isolated VLM+DiT baselines show weaker or saturated scaling.
+          </p>
+
+          <div class="box" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="content has-text-centered">
+              <img src="static/images/ablation.png" alt="VLM-to-VLA transfer and embodied CoT scaling" width="100%" style="max-width: 1200px; height: auto;"/>
+              <p>Figure 3: VLM-to-VLA transfer and embodied CoT scaling. <strong>Left:</strong> ECoT better aligns VLM capability with action. <strong>Right:</strong> ERVLA scales steadily with more CoT data on both LIBERO-Plus and VLABench, whereas AR CoT+FAST and isolated VLM+DiT show weaker or saturated scaling.</p>
+            </div>
+          </div>
+
+          <!-- Real-World Evaluation Section -->
+          <h2 class="title is-3 has-text-centered">Real-World Evaluation</h2>
+          <p class="has-text-justified">
+            We also deploy ERVLA on physical robots using one third-person camera and one wrist camera. The real-world task suite includes placing items into drawers and clearing tabletop waste across four tiers: <strong>Basic</strong>, <strong>Distractors</strong>, <strong>Semantic</strong>, and <strong>Long-horizon</strong>. The main gap appears under semantic ambiguity, distractors, and long-horizon dependencies, where ERVLA benefits from internalized embodied reasoning and cleaner diffusion-policy conditioning.
+          </p>
+
+          <div class="rw-video-grid">
+            <div class="rw-video-card">
+              <div class="rw-video-wrap">
+                <video autoplay muted loop playsinline preload="metadata">
+                  <source src="static/videos/real-world/Basic_move_toyx3.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="rw-video-caption">
+                <span class="rw-tier-tag">Basic</span>
+                <p>Put the toy car into the drawer.</p>
+              </div>
+            </div>
+            <div class="rw-video-card">
+              <div class="rw-video-wrap">
+                <video autoplay muted loop playsinline preload="metadata">
+                  <source src="static/videos/real-world/Distractor_move_toy.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="rw-video-caption">
+                <span class="rw-tier-tag">Distractors</span>
+                <p>Put the toy into the drawer.</p>
+              </div>
+            </div>
+            <div class="rw-video-card">
+              <div class="rw-video-wrap">
+                <video autoplay muted loop playsinline preload="metadata" style="object-position: center bottom;">
+                  <source src="static/videos/real-world/Semantic_lower_drawer.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="rw-video-caption">
+                <span class="rw-tier-tag">Semantic</span>
+                <p>Put the toy into the lower drawer.</p>
+              </div>
+            </div>
+            <div class="rw-video-card">
+              <div class="rw-video-wrap">
+                <video autoplay muted loop playsinline preload="metadata">
+                  <source src="static/videos/real-world/Long_move_toy.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="rw-video-caption">
+                <span class="rw-tier-tag">Long-horizon</span>
+                <p>Put the non-toy items into the upper drawer, and put the toys into the second drawer.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+</body>
+</html>
