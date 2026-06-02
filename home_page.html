@@ -1208,7 +1208,7 @@
             <span class="mv-vdp" style="vertical-align: middle;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">ERVLA</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle ", style="width: 100%; margin-bottom: 20px; font-size: 1.6rem; white-space: normal;">
-            <strong>Revisiting Embodied Chain-of-Thought for Generalizable Robotic Manipulation</strong>
+            <strong>Revisiting Embodied Chain-of-Thought for Generalizable Robot Manipulation</strong>
           </h2>
           
           
@@ -1222,10 +1222,10 @@
             <span class="author-block">Jun Guo<sup>1,2</sup></span>,
             <span class="author-block">Wenxuan Song<sup>2</sup></span>,
             <span class="author-block">Pengxiang Ding<sup>2,6</sup></span>,
-            <span class="author-block">Runze Suo<sup>2,7,8</sup></span>
+            <span class="author-block">Runze Suo<sup>2,7,9</sup></span>
             <br>
             <span class="author-block">Yifei Su<sup>2</sup></span>,
-            <span class="author-block">Xin Xiao<sup>9</sup></span>,
+            <span class="author-block">Xin Xiao<sup>8</sup></span>,
             <span class="author-block">Xinghang Li<sup>2</sup></span>,
             <span class="author-block">Huaping Liu<sup>1,★</sup></span>
           </div>
@@ -1347,7 +1347,7 @@
               <span class="contribution-tag">Contribution 3</span>
               ERVLA: Reasoning as Representation Shaping
             </h3>
-            <p>We propose ERVLA, a reasoning capable VLA model that combines explicit embodied CoT supervision, reasoning dropout, a choice branch, knowledge truncation, and a diffusion based action policy. ERVLA enables end to end training where action losses can shape the VLM backbone.</p>
+            <p>We present <strong>ERVLA</strong>, an embodied reasoning VLA that treats explicit CoT as a training signal to reshape action-relevant VLM representations rather than a mandatory autoregressive prefix at inference. ERVLA couples a VLM with a diffusion action head, using a choice branch for action-level supervision, knowledge-truncated KV conditioning for cleaner semantic memory, and <strong>CoT dropout</strong> to learn from rich reasoning traces during training while predicting continuous actions without mandatory test-time CoT. This end-to-end design enables reliable scaling with embodied CoT pre-training and achieves state-of-the-art results with <strong>86.9%</strong> on LIBERO-Plus and <strong>53.2%</strong> on VLABench, with stronger real-world robustness under semantic ambiguity and long-horizon tasks.</p>
           </div>
 
         </div>
