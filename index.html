@@ -769,6 +769,22 @@
     }
     .top-spotlight .publication-links {
       margin-top: 1.4rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .top-spotlight .publication-venue {
+      display: inline-block;
+      margin: 0 auto 0.5rem;
+      padding: 0.45rem 1rem;
+      border: 1px solid rgba(247, 211, 124, 0.65);
+      border-radius: 999px;
+      background: rgba(63, 42, 16, 0.45);
+      font-size: 1.1rem;
+      line-height: 1.5;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
     .tldr-box {
       background: linear-gradient(135deg, rgba(255, 250, 238, 0.98), rgba(249, 238, 210, 0.95)) !important;
@@ -1210,7 +1226,7 @@
           <h2 class="subtitle is-3 publication-subtitle ", style="width: 100%; margin-bottom: 20px; font-size: 1.6rem; white-space: normal;">
             <strong>Revisiting Embodied Chain-of-Thought for Generalizable Robot Manipulation</strong>
           </h2>
-          
+          <p class="publication-venue">Accepted to NeurIPS 2026 &middot; Spotlight</p>
           
           <div class="is-size-5 publication-authors hero-author-list", style="width: 100%; margin: 15px auto;", >
             <span class="author-block">Nan Sun<sup>1,2</sup></span>,
@@ -1245,33 +1261,23 @@
           </div>
 
           <div class="is-size-5 publication-authors hero-author-notes">
-            <span class="author-block"><sup>†</sup> Project Leader</span>
+            <span class="author-block"><sup>†</sup> Project Lead</span>
             <span class="author-block"><sup>★</sup> Corresponding Author</span>
           </div>
 
           <div class="column has-text-centered">
-            <!--
             <div class="publication-links">
               <span class="link-block">
-                <a href="javascript:void(0)"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv" style="color: #B31B1B;"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="javascript:void(0)"
+                <a href="https://github.com/Oscar-Yang11/ERVLA" target="_blank" rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (Coming Soon)</span>
+                  <span>GitHub</span>
                   </a>
               </span>
               <span class="link-block">
-                <a href="javascript:void(0)"
+                <a href="https://huggingface.co/ERVLA" target="_blank" rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <span class="hf-icon" aria-hidden="true">🤗</span>
@@ -1280,7 +1286,6 @@
                   </a>
               </span>
             </div>
-            -->
           </div>
         </div>
       </div>
